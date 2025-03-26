@@ -1,0 +1,37 @@
+{
+    "exceptions": [
+        "UCR",
+        "LPCO",
+        "PNR",
+        "INF",
+        "DPG",
+        "UNDG",
+        "URI",
+        "MIME",
+        "ID",
+        "IPR",
+        "WCO",
+        "ISPS",
+        "AEO",
+        "IMO",
+        "P.O. box",
+        "WCO Data Model"
+    ],
+    "libcolumns": {
+        "Path": "UML Model Path",
+        "Class ID": "Class ID",
+        "Class name": "Class Name",
+        "Attribute ID": "Attr. ID",
+        "Attribute name": "Attribute Name",
+        "Definition": "Definition",
+        "Core Data Type": "Core Data Type",
+        "Format": "Format"
+    },
+    "oiscolumns": {
+        "Path": "UML Model Path",
+        "ID": "ID",
+        "Name": "Name",
+        "Definition": "Definition",
+        "Format": "Format"
+    }
+}
