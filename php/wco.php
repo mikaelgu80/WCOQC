@@ -159,7 +159,7 @@ switch ($operation) {
                     }
                 }
                 if (in_array($value['CDT'], ['Amount', 'Measure', 'Numeric', 'Quantity']) && substr($value['format'], 0, 1) != 'n') { // Similar processing for CDT Indicator once it has been agreed on
-                    $formatErrors[$key] = 'Attribute\'s ' . $key . ' (' . $value['name'] . ', CDT: ' . $value['CDT'] . ') format (' . $value['format'] . ') might be conficling.';
+                    $formatErrors[$key] = 'Attribute\'s ' . $key . ' (' . $value['name'] . ', CDT: ' . $value['CDT'] . ') format (' . $value['format'] . ') might be conflicting.';
                 }
 
                 if (!$validName) {
