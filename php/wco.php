@@ -107,6 +107,8 @@ switch ($operation) {
             $multiWordExceptions,
             array_map(fn($exception) => str_replace(' ', '-', strtolower($exception)), $multiWordExceptions)
         );
+        $allExceptions = array_merge($settings['exceptions'], $multiWordExceptions);
+
         foreach ($uniqueData as $key => $value) {
             if (!str_ends_with($value['definition'], '.')) {
                 $definitionErrors[$key] = ucfirst($value['type']) . '\' ' . $key . ' definition (' . $value['definition'] . ') does not end in a period.';
@@ -131,7 +133,7 @@ switch ($operation) {
                     $value['name']
                 );
                 $firstWord = explode(' ', $value['name'])[0]; // Extract the first word from the name
-                if (in_array($firstWord, $settings['exceptions']) || in_array($firstWord, $multiWordExceptions)) {
+                if (in_array($firstWord, $allExceptions)) {
                     $modifiedName = ucfirst($modifiedName); // Convert the first character to upper case
                 }
 
